@@ -13,7 +13,6 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .font(.largeTitle)
                 .padding()
-                .foregroundColor(.accentColor)
             Text("Olá mundo!")
                 .font(.largeTitle)
         }
