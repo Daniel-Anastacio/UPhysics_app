@@ -33,7 +33,7 @@
 		6C2E41E52926B285008ABCF5 /* Input_DiasSemana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input_DiasSemana.swift; sourceTree = "<group>"; };
 		6C2E41E72926B2CC008ABCF5 /* BT_Adicionar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BT_Adicionar.swift; sourceTree = "<group>"; };
 		6C2E41E92926B2E0008ABCF5 /* Cores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cores.swift; sourceTree = "<group>"; };
-		6C3376192926BAFF00D501DF /* DadosApp.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = DadosApp.geojson; sourceTree = "<group>"; };
+		6C3376192926BAFF00D501DF /* DadosApp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DadosApp.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 		6C3376182926BAEB00D501DF /* Arquivos */ = {
 			isa = PBXGroup;
 			children = (
-				6C3376192926BAFF00D501DF /* DadosApp.geojson */,
+				6C3376192926BAFF00D501DF /* DadosApp.json */,
 			);
 			path = Arquivos;
 			sourceTree = "<group>";
