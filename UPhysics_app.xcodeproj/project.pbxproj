@@ -33,7 +33,7 @@
 		6C2E41E52926B285008ABCF5 /* Input_DiasSemana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input_DiasSemana.swift; sourceTree = "<group>"; };
 		6C2E41E72926B2CC008ABCF5 /* BT_Adicionar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BT_Adicionar.swift; sourceTree = "<group>"; };
 		6C2E41E92926B2E0008ABCF5 /* Cores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cores.swift; sourceTree = "<group>"; };
-		6C2E41ED2926B32E008ABCF5 /* DadosApp.geojson */ = {isa = PBXFileReference; lastKnownFileType = file; name = DadosApp.geojson; path = UPhysics_app/DadosApp.geojson; sourceTree = SOURCE_ROOT; };
+		6C3376192926BAFF00D501DF /* DadosApp.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = DadosApp.geojson; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +66,8 @@
 		2F2125FB2914338D00EB0AE5 /* UPhysics_app */ = {
 			isa = PBXGroup;
 			children = (
+				6C3376182926BAEB00D501DF /* Arquivos */,
 				6C2E41DB2926B1CB008ABCF5 /* Componentes */,
-				6C2E41DA2926B1C1008ABCF5 /* Arquivos */,
 				6C2E41D22926B0A3008ABCF5 /* UPhysics_appApp.swift */,
 				2F2125FE2914338D00EB0AE5 /* ContentView.swift */,
 				2F2126002914338E00EB0AE5 /* Assets.xcassets */,
@@ -82,14 +82,6 @@
 				2F2126032914338E00EB0AE5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		6C2E41DA2926B1C1008ABCF5 /* Arquivos */ = {
-			isa = PBXGroup;
-			children = (
-				6C2E41ED2926B32E008ABCF5 /* DadosApp.geojson */,
-			);
-			path = Arquivos;
 			sourceTree = "<group>";
 		};
 		6C2E41DB2926B1CB008ABCF5 /* Componentes */ = {
@@ -112,6 +104,14 @@
 				6C2E41E52926B285008ABCF5 /* Input_DiasSemana.swift */,
 			);
 			path = "Tela inicial";
+			sourceTree = "<group>";
+		};
+		6C3376182926BAEB00D501DF /* Arquivos */ = {
+			isa = PBXGroup;
+			children = (
+				6C3376192926BAFF00D501DF /* DadosApp.geojson */,
+			);
+			path = Arquivos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
