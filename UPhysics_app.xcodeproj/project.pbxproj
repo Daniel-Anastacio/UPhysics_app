@@ -11,6 +11,7 @@
 		2F2125FF2914338D00EB0AE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2125FE2914338D00EB0AE5 /* ContentView.swift */; };
 		2F2126012914338E00EB0AE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2126002914338E00EB0AE5 /* Assets.xcassets */; };
 		2F2126042914338E00EB0AE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2126032914338E00EB0AE5 /* Preview Assets.xcassets */; };
+		2FF3F8812926A03700FBADE0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF3F8802926A03700FBADE0 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2F2125FE2914338D00EB0AE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F2126002914338E00EB0AE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F2126032914338E00EB0AE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2FF3F8802926A03700FBADE0 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		2F2125FB2914338D00EB0AE5 /* UPhysics_app */ = {
 			isa = PBXGroup;
 			children = (
+				2FF3F8802926A03700FBADE0 /* Colors.swift */,
 				2F2125FC2914338D00EB0AE5 /* UPhysics_appApp.swift */,
 				2F2125FE2914338D00EB0AE5 /* ContentView.swift */,
 				2F2126002914338E00EB0AE5 /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F2125FF2914338D00EB0AE5 /* ContentView.swift in Sources */,
+				2FF3F8812926A03700FBADE0 /* Colors.swift in Sources */,
 				2F2125FD2914338D00EB0AE5 /* UPhysics_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
