@@ -7,7 +7,7 @@
 import Foundation
 import SwiftUI
 
-enum cor {
+enum Cores {
     static let marrom = Color("marrom")
     static let marrom_claro = Color("marrom_claro")
     static let branco = Color("branco")

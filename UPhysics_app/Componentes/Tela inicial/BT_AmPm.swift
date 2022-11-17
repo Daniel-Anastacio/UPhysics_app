@@ -1,5 +1,5 @@
 //
-//  input_selecionar_dia.swift
+//  BT_Am_Pm.swift
 //  UPhysics_app
 //
 //  Created by Nícolas Aguiar Ribeiro de Carvalho on 17/11/22.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct input_selecionar_dia: View {
+struct BT_Am_Pm: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct input_selecionar_dia_Previews: PreviewProvider {
+struct BT_Am_Pm_Previews: PreviewProvider {
     static var previews: some View {
-        input_selecionar_dia()
+        BT_Am_Pm()
     }
 }
