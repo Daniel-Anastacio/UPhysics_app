@@ -18,7 +18,12 @@
 		6C2E41E62926B285008ABCF5 /* Input_DiasSemana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2E41E52926B285008ABCF5 /* Input_DiasSemana.swift */; };
 		6C2E41E82926B2CC008ABCF5 /* BT_Adicionar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2E41E72926B2CC008ABCF5 /* BT_Adicionar.swift */; };
 		6C2E41EA2926B2E0008ABCF5 /* Cores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2E41E92926B2E0008ABCF5 /* Cores.swift */; };
-		6C33761C2926CF4D00D501DF /* TrataJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C33761B2926CF4D00D501DF /* TrataJson.swift */; };
+		6C31B5FF292D3CA700D25F42 /* TrataDados.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C31B5FE292D3CA700D25F42 /* TrataDados.swift */; };
+		6C33761C2926CF4D00D501DF /* FormatoDados.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C33761B2926CF4D00D501DF /* FormatoDados.swift */; };
+		6CE4C091292D624700C219CB /* dados_app.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C3376192926BAFF00D501DF /* dados_app.json */; };
+		6CE4C092292D624E00C219CB /* diarios_semanais.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C31B5FB292D306100D25F42 /* diarios_semanais.json */; };
+		6CE4C093292D625100C219CB /* frases_diarias.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 6C31B5FC292D336400D25F42 /* frases_diarias.geojson */; };
+		6CE4C094292D625300C219CB /* metas_semanais.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C31B5FD292D355D00D25F42 /* metas_semanais.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +39,12 @@
 		6C2E41E52926B285008ABCF5 /* Input_DiasSemana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input_DiasSemana.swift; sourceTree = "<group>"; };
 		6C2E41E72926B2CC008ABCF5 /* BT_Adicionar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BT_Adicionar.swift; sourceTree = "<group>"; };
 		6C2E41E92926B2E0008ABCF5 /* Cores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cores.swift; sourceTree = "<group>"; };
-		6C3376192926BAFF00D501DF /* DadosApp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DadosApp.json; sourceTree = "<group>"; };
-		6C33761B2926CF4D00D501DF /* TrataJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrataJson.swift; sourceTree = "<group>"; };
+		6C31B5FB292D306100D25F42 /* diarios_semanais.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = diarios_semanais.json; sourceTree = "<group>"; };
+		6C31B5FC292D336400D25F42 /* frases_diarias.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = frases_diarias.geojson; sourceTree = "<group>"; };
+		6C31B5FD292D355D00D25F42 /* metas_semanais.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = metas_semanais.json; sourceTree = "<group>"; };
+		6C31B5FE292D3CA700D25F42 /* TrataDados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrataDados.swift; sourceTree = "<group>"; };
+		6C3376192926BAFF00D501DF /* dados_app.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dados_app.json; sourceTree = "<group>"; };
+		6C33761B2926CF4D00D501DF /* FormatoDados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatoDados.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +121,10 @@
 		6C3376182926BAEB00D501DF /* Arquivos */ = {
 			isa = PBXGroup;
 			children = (
-				6C3376192926BAFF00D501DF /* DadosApp.json */,
+				6C3376192926BAFF00D501DF /* dados_app.json */,
+				6C31B5FB292D306100D25F42 /* diarios_semanais.json */,
+				6C31B5FC292D336400D25F42 /* frases_diarias.geojson */,
+				6C31B5FD292D355D00D25F42 /* metas_semanais.json */,
 			);
 			path = Arquivos;
 			sourceTree = "<group>";
@@ -120,7 +132,8 @@
 		6C33761A2926CF0100D501DF /* Funcionalidades */ = {
 			isa = PBXGroup;
 			children = (
-				6C33761B2926CF4D00D501DF /* TrataJson.swift */,
+				6C33761B2926CF4D00D501DF /* FormatoDados.swift */,
+				6C31B5FE292D3CA700D25F42 /* TrataDados.swift */,
 			);
 			path = Funcionalidades;
 			sourceTree = "<group>";
@@ -183,8 +196,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CE4C092292D624E00C219CB /* diarios_semanais.json in Resources */,
+				6CE4C094292D625300C219CB /* metas_semanais.json in Resources */,
+				6CE4C093292D625100C219CB /* frases_diarias.geojson in Resources */,
 				2F2126042914338E00EB0AE5 /* Preview Assets.xcassets in Resources */,
 				2F2126012914338E00EB0AE5 /* Assets.xcassets in Resources */,
+				6CE4C091292D624700C219CB /* dados_app.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,9 +218,10 @@
 				6C2E41E02926B20C008ABCF5 /* Scroll_Horario.swift in Sources */,
 				6C2E41E82926B2CC008ABCF5 /* BT_Adicionar.swift in Sources */,
 				2F2125FF2914338D00EB0AE5 /* ContentView.swift in Sources */,
+				6C31B5FF292D3CA700D25F42 /* TrataDados.swift in Sources */,
 				6C2E41D32926B0A3008ABCF5 /* UPhysics_appApp.swift in Sources */,
 				6C2E41E42926B25D008ABCF5 /* BT_DiaSemana.swift in Sources */,
-				6C33761C2926CF4D00D501DF /* TrataJson.swift in Sources */,
+				6C33761C2926CF4D00D501DF /* FormatoDados.swift in Sources */,
 				6C2E41EA2926B2E0008ABCF5 /* Cores.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
