@@ -9,29 +9,15 @@ import SwiftUI
 
 
 
-
-
-func carregaDados (nomeArquivo: String) {
-    if let path = Bundle.main.url(forResource: nomeArquivo, withExtension: "json") {
-        print(path)
-    }
-    
-    
-    else {
-        print("Arquivo não encontrado")
-    }
-}
-
-
-
-
 struct ContentView: View {
     var body: some View {
     
         Text("Teste")
         
         .onAppear{
-            carregaDados(nomeArquivo: "dados_app")
+            if let result = carregaDados(nomeArquivo: "dados_app", tipoDado: DadosApp.self) {
+                print(result)
+            }
         }
         
     }
