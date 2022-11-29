@@ -10,12 +10,14 @@
 		2F2125FF2914338D00EB0AE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2125FE2914338D00EB0AE5 /* ContentView.swift */; };
 		2F2126012914338E00EB0AE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2126002914338E00EB0AE5 /* Assets.xcassets */; };
 		2F2126042914338E00EB0AE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2126032914338E00EB0AE5 /* Preview Assets.xcassets */; };
+		2F25412729367B6D00B261F8 /* buttonTabWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F25411E29367B6D00B261F8 /* buttonTabWeek.swift */; };
+		2F25412829367B6D00B261F8 /* TabWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F25411F29367B6D00B261F8 /* TabWeek.swift */; };
+		2F25412929367B6D00B261F8 /* TelaInicial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F25412029367B6D00B261F8 /* TelaInicial.swift */; };
+		2F25412A29367B6D00B261F8 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F25412229367B6D00B261F8 /* Timer.swift */; };
+		2F25412B29367B6D00B261F8 /* Botoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F25412329367B6D00B261F8 /* Botoes.swift */; };
+		2F25412C29367B6D00B261F8 /* Relogio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F25412429367B6D00B261F8 /* Relogio.swift */; };
+		2F25412D29367B6D00B261F8 /* ButtonCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F25412629367B6D00B261F8 /* ButtonCreate.swift */; };
 		6C2E41D32926B0A3008ABCF5 /* UPhysics_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2E41D22926B0A3008ABCF5 /* UPhysics_appApp.swift */; };
-		6C2E41DE2926B1E8008ABCF5 /* Tela_Inicial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2E41DD2926B1E8008ABCF5 /* Tela_Inicial.swift */; };
-		6C2E41E02926B20C008ABCF5 /* Scroll_Horario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2E41DF2926B20C008ABCF5 /* Scroll_Horario.swift */; };
-		6C2E41E22926B225008ABCF5 /* BT_AmPm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2E41E12926B225008ABCF5 /* BT_AmPm.swift */; };
-		6C2E41E42926B25D008ABCF5 /* BT_DiaSemana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2E41E32926B25D008ABCF5 /* BT_DiaSemana.swift */; };
-		6C2E41E62926B285008ABCF5 /* Input_DiasSemana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2E41E52926B285008ABCF5 /* Input_DiasSemana.swift */; };
 		6C2E41E82926B2CC008ABCF5 /* BT_Adicionar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2E41E72926B2CC008ABCF5 /* BT_Adicionar.swift */; };
 		6C2E41EA2926B2E0008ABCF5 /* Cores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2E41E92926B2E0008ABCF5 /* Cores.swift */; };
 		6C31B5FF292D3CA700D25F42 /* TrataDados.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C31B5FE292D3CA700D25F42 /* TrataDados.swift */; };
@@ -31,12 +33,14 @@
 		2F2125FE2914338D00EB0AE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F2126002914338E00EB0AE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F2126032914338E00EB0AE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F25411E29367B6D00B261F8 /* buttonTabWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = buttonTabWeek.swift; sourceTree = "<group>"; };
+		2F25411F29367B6D00B261F8 /* TabWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabWeek.swift; sourceTree = "<group>"; };
+		2F25412029367B6D00B261F8 /* TelaInicial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelaInicial.swift; sourceTree = "<group>"; };
+		2F25412229367B6D00B261F8 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		2F25412329367B6D00B261F8 /* Botoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Botoes.swift; sourceTree = "<group>"; };
+		2F25412429367B6D00B261F8 /* Relogio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relogio.swift; sourceTree = "<group>"; };
+		2F25412629367B6D00B261F8 /* ButtonCreate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCreate.swift; sourceTree = "<group>"; };
 		6C2E41D22926B0A3008ABCF5 /* UPhysics_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPhysics_appApp.swift; sourceTree = "<group>"; };
-		6C2E41DD2926B1E8008ABCF5 /* Tela_Inicial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela_Inicial.swift; sourceTree = "<group>"; };
-		6C2E41DF2926B20C008ABCF5 /* Scroll_Horario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scroll_Horario.swift; sourceTree = "<group>"; };
-		6C2E41E12926B225008ABCF5 /* BT_AmPm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BT_AmPm.swift; sourceTree = "<group>"; };
-		6C2E41E32926B25D008ABCF5 /* BT_DiaSemana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BT_DiaSemana.swift; sourceTree = "<group>"; };
-		6C2E41E52926B285008ABCF5 /* Input_DiasSemana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input_DiasSemana.swift; sourceTree = "<group>"; };
 		6C2E41E72926B2CC008ABCF5 /* BT_Adicionar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BT_Adicionar.swift; sourceTree = "<group>"; };
 		6C2E41E92926B2E0008ABCF5 /* Cores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cores.swift; sourceTree = "<group>"; };
 		6C31B5FB292D306100D25F42 /* diarios_semanais.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = diarios_semanais.json; sourceTree = "<group>"; };
@@ -96,26 +100,52 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2F25411C29367B6D00B261F8 /* Tela Inicial 14.16.22 */ = {
+			isa = PBXGroup;
+			children = (
+				2F25412029367B6D00B261F8 /* TelaInicial.swift */,
+				2F25411D29367B6D00B261F8 /* Tabela semanas */,
+				2F25412129367B6D00B261F8 /* Alarme */,
+				2F25412529367B6D00B261F8 /* Botao de criar */,
+			);
+			path = "Tela Inicial 14.16.22";
+			sourceTree = "<group>";
+		};
+		2F25411D29367B6D00B261F8 /* Tabela semanas */ = {
+			isa = PBXGroup;
+			children = (
+				2F25411E29367B6D00B261F8 /* buttonTabWeek.swift */,
+				2F25411F29367B6D00B261F8 /* TabWeek.swift */,
+			);
+			path = "Tabela semanas";
+			sourceTree = "<group>";
+		};
+		2F25412129367B6D00B261F8 /* Alarme */ = {
+			isa = PBXGroup;
+			children = (
+				2F25412229367B6D00B261F8 /* Timer.swift */,
+				2F25412329367B6D00B261F8 /* Botoes.swift */,
+				2F25412429367B6D00B261F8 /* Relogio.swift */,
+			);
+			path = Alarme;
+			sourceTree = "<group>";
+		};
+		2F25412529367B6D00B261F8 /* Botao de criar */ = {
+			isa = PBXGroup;
+			children = (
+				2F25412629367B6D00B261F8 /* ButtonCreate.swift */,
+			);
+			path = "Botao de criar";
+			sourceTree = "<group>";
+		};
 		6C2E41DB2926B1CB008ABCF5 /* Componentes */ = {
 			isa = PBXGroup;
 			children = (
-				6C2E41DC2926B1D3008ABCF5 /* Tela inicial */,
+				2F25411C29367B6D00B261F8 /* Tela Inicial 14.16.22 */,
 				6C2E41E72926B2CC008ABCF5 /* BT_Adicionar.swift */,
 				6C2E41E92926B2E0008ABCF5 /* Cores.swift */,
 			);
 			path = Componentes;
-			sourceTree = "<group>";
-		};
-		6C2E41DC2926B1D3008ABCF5 /* Tela inicial */ = {
-			isa = PBXGroup;
-			children = (
-				6C2E41DD2926B1E8008ABCF5 /* Tela_Inicial.swift */,
-				6C2E41DF2926B20C008ABCF5 /* Scroll_Horario.swift */,
-				6C2E41E12926B225008ABCF5 /* BT_AmPm.swift */,
-				6C2E41E32926B25D008ABCF5 /* BT_DiaSemana.swift */,
-				6C2E41E52926B285008ABCF5 /* Input_DiasSemana.swift */,
-			);
-			path = "Tela inicial";
 			sourceTree = "<group>";
 		};
 		6C3376182926BAEB00D501DF /* Arquivos */ = {
@@ -212,15 +242,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C2E41DE2926B1E8008ABCF5 /* Tela_Inicial.swift in Sources */,
-				6C2E41E22926B225008ABCF5 /* BT_AmPm.swift in Sources */,
-				6C2E41E62926B285008ABCF5 /* Input_DiasSemana.swift in Sources */,
-				6C2E41E02926B20C008ABCF5 /* Scroll_Horario.swift in Sources */,
+				2F25412729367B6D00B261F8 /* buttonTabWeek.swift in Sources */,
+				2F25412D29367B6D00B261F8 /* ButtonCreate.swift in Sources */,
+				2F25412B29367B6D00B261F8 /* Botoes.swift in Sources */,
 				6C2E41E82926B2CC008ABCF5 /* BT_Adicionar.swift in Sources */,
 				2F2125FF2914338D00EB0AE5 /* ContentView.swift in Sources */,
+				2F25412A29367B6D00B261F8 /* Timer.swift in Sources */,
+				2F25412829367B6D00B261F8 /* TabWeek.swift in Sources */,
 				6C31B5FF292D3CA700D25F42 /* TrataDados.swift in Sources */,
 				6C2E41D32926B0A3008ABCF5 /* UPhysics_appApp.swift in Sources */,
-				6C2E41E42926B25D008ABCF5 /* BT_DiaSemana.swift in Sources */,
+				2F25412929367B6D00B261F8 /* TelaInicial.swift in Sources */,
+				2F25412C29367B6D00B261F8 /* Relogio.swift in Sources */,
 				6C33761C2926CF4D00D501DF /* FormatoDados.swift in Sources */,
 				6C2E41EA2926B2E0008ABCF5 /* Cores.swift in Sources */,
 			);
