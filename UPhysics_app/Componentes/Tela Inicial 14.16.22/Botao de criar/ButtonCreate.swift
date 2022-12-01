@@ -37,8 +37,10 @@ struct ButtonCreate: View {
     }
 }
 
-struct ButtonCreate_Previews: PreviewProvider {
+/*struct ButtonCreate_Previews: PreviewProvider {
+    @State var teste : [String:Int] = ["a":1]
     static var previews: some View {
-        ButtonCreate()
+        
+        ButtonCreate(Alarme: $teste)
     }
-}
+}*/
