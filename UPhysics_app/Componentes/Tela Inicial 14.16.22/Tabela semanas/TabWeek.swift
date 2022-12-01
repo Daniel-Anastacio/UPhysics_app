@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TabWeek: View {
     
+    
     @State private var selectedDay = ""
     @State private var isSelected = false
     @State private var isSelected2 = false
@@ -17,8 +18,12 @@ struct TabWeek: View {
     @State private var isSelected5 = false
     @State private var isSelected6 = false
     @State private var isSelected7 = false
+    @State var number : Int = 0
+    
+    @Binding public var Alarme : [String:Int]
     
     var body: some View {
+        
         ZStack{
             Cores.laranja.ignoresSafeArea()
             Rectangle()
@@ -40,6 +45,8 @@ struct TabWeek: View {
                             isSelected5 = false
                             isSelected6 = false
                             isSelected7 = false
+                            number = 1
+                            Alarme["Dia da semana"] = number
                         }
                     }
                 buttonTabWeek(
@@ -54,6 +61,8 @@ struct TabWeek: View {
                             isSelected5 = false
                             isSelected6 = false
                             isSelected7 = false
+                            number = 2
+                            Alarme["Dia da semana"] = number
                         }
                     }
                 buttonTabWeek(
@@ -68,6 +77,8 @@ struct TabWeek: View {
                             isSelected5 = false
                             isSelected6 = false
                             isSelected7 = false
+                            number = 3
+                            Alarme["Dia da semana"] = number
                         }
                     }
                 buttonTabWeek(
@@ -82,6 +93,8 @@ struct TabWeek: View {
                             isSelected5 = false
                             isSelected6 = false
                             isSelected7 = false
+                            number = 4
+                            Alarme["Dia da semana"] = number
                         }
                     }
                 buttonTabWeek(
@@ -96,6 +109,8 @@ struct TabWeek: View {
                             isSelected = false
                             isSelected6 = false
                             isSelected7 = false
+                            number = 5
+                            Alarme["Dia da semana"] = number
                         }
                     }
                 buttonTabWeek(
@@ -110,6 +125,8 @@ struct TabWeek: View {
                             isSelected5 = false
                             isSelected = false
                             isSelected7 = false
+                            number = 6
+                            Alarme["Dia da semana"] = number
                         }
                     }
                 buttonTabWeek(
@@ -124,9 +141,14 @@ struct TabWeek: View {
                             isSelected5 = false
                             isSelected6 = false
                             isSelected = false
+                            number = 7
+                            Alarme["Dia da semana"] = number
                         }
                     }
+                
             }
+                            
+            
         }
     }
 }
@@ -148,8 +170,8 @@ extension View {
     }
 }
 
-struct TabWeek_Previews: PreviewProvider {
-    static var previews: some View {
-        TabWeek()
-    }
-}
+//struct TabWeek_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TabWeek()
+//    }
+//}

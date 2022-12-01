@@ -16,8 +16,8 @@ struct Timer: View {
     @State var intVal1 = 0
     
     @State var intVal2 = 0
-    
-    @State public var Alarme : [String:Int] = ["Dia da semana": 0, "Hora":0, "Minuto":0, "Período": 0]
+
+    @Binding public var Alarme : [String:Int]
     
     var body: some View {
         HStack{
@@ -40,6 +40,7 @@ struct Timer: View {
                     Minutos(pos: 1, height: 100, value: intVal2, updateModel: { valormnts, pos in
                         intVal2 = valormnts
                         Alarme["Minuto"] = valormnts
+                        
                     })
                 }
             }
@@ -61,6 +62,7 @@ struct Timer: View {
                     .onChange(of: isOnam) { newValue in
                         if newValue == true {
                             Alarme["Período"] = 1
+                            print(Alarme)
                         } else {
                             Alarme["Período"] = 2
                         }
@@ -69,4 +71,5 @@ struct Timer: View {
             }
         }
     }
-    
+
+

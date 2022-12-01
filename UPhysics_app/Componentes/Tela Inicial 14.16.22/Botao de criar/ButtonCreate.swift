@@ -11,7 +11,8 @@ struct ButtonCreate: View {
     
     
     @State var isSelected: Bool = false
-
+    @Binding var Alarme: [String:Int]
+    
     var body: some View {
         
         ZStack{
