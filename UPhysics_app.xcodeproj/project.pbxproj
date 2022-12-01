@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1C9090293947D40031FADE /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1C908B293947D40031FADE /* DropDown.swift */; };
+		2F1C9091293947D40031FADE /* CreateDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1C908C293947D40031FADE /* CreateDiary.swift */; };
+		2F1C9092293947D40031FADE /* ButtonTabSatisfaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1C908D293947D40031FADE /* ButtonTabSatisfaction.swift */; };
+		2F1C9093293947D40031FADE /* ButtonCreateSatisfaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1C908E293947D40031FADE /* ButtonCreateSatisfaction.swift */; };
+		2F1C9094293947D40031FADE /* TabSatisfaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1C908F293947D40031FADE /* TabSatisfaction.swift */; };
 		2F2125FF2914338D00EB0AE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2125FE2914338D00EB0AE5 /* ContentView.swift */; };
 		2F2126012914338E00EB0AE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2126002914338E00EB0AE5 /* Assets.xcassets */; };
 		2F2126042914338E00EB0AE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2126032914338E00EB0AE5 /* Preview Assets.xcassets */; };
@@ -29,6 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F1C908B293947D40031FADE /* DropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
+		2F1C908C293947D40031FADE /* CreateDiary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateDiary.swift; sourceTree = "<group>"; };
+		2F1C908D293947D40031FADE /* ButtonTabSatisfaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTabSatisfaction.swift; sourceTree = "<group>"; };
+		2F1C908E293947D40031FADE /* ButtonCreateSatisfaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCreateSatisfaction.swift; sourceTree = "<group>"; };
+		2F1C908F293947D40031FADE /* TabSatisfaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabSatisfaction.swift; sourceTree = "<group>"; };
 		2F2125F92914338D00EB0AE5 /* UPhysics_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UPhysics_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F2125FE2914338D00EB0AE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F2126002914338E00EB0AE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +72,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F1C908A293947D40031FADE /* Criacao Diario */ = {
+			isa = PBXGroup;
+			children = (
+				2F1C908C293947D40031FADE /* CreateDiary.swift */,
+				2F1C908B293947D40031FADE /* DropDown.swift */,
+				2F1C908F293947D40031FADE /* TabSatisfaction.swift */,
+				2F1C908D293947D40031FADE /* ButtonTabSatisfaction.swift */,
+				2F1C908E293947D40031FADE /* ButtonCreateSatisfaction.swift */,
+			);
+			path = "Criacao Diario";
+			sourceTree = "<group>";
+		};
 		2F2125F02914338D00EB0AE5 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +163,7 @@
 		6C2E41DB2926B1CB008ABCF5 /* Componentes */ = {
 			isa = PBXGroup;
 			children = (
+				2F1C908A293947D40031FADE /* Criacao Diario */,
 				2F25411C29367B6D00B261F8 /* Tela Inicial 14.16.22 */,
 				6C2E41E72926B2CC008ABCF5 /* BT_Adicionar.swift */,
 				6C2E41E92926B2E0008ABCF5 /* Cores.swift */,
@@ -243,18 +266,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F25412729367B6D00B261F8 /* buttonTabWeek.swift in Sources */,
+				2F1C9092293947D40031FADE /* ButtonTabSatisfaction.swift in Sources */,
 				2F25412D29367B6D00B261F8 /* ButtonCreate.swift in Sources */,
+				2F1C9093293947D40031FADE /* ButtonCreateSatisfaction.swift in Sources */,
 				2F25412B29367B6D00B261F8 /* Botoes.swift in Sources */,
 				6C2E41E82926B2CC008ABCF5 /* BT_Adicionar.swift in Sources */,
 				2F2125FF2914338D00EB0AE5 /* ContentView.swift in Sources */,
 				2F25412A29367B6D00B261F8 /* Timer.swift in Sources */,
 				2F25412829367B6D00B261F8 /* TabWeek.swift in Sources */,
+				2F1C9091293947D40031FADE /* CreateDiary.swift in Sources */,
 				6C31B5FF292D3CA700D25F42 /* TrataDados.swift in Sources */,
 				6C2E41D32926B0A3008ABCF5 /* UPhysics_appApp.swift in Sources */,
 				2F25412929367B6D00B261F8 /* TelaInicial.swift in Sources */,
 				2F25412C29367B6D00B261F8 /* Relogio.swift in Sources */,
 				6C33761C2926CF4D00D501DF /* FormatoDados.swift in Sources */,
+				2F1C9090293947D40031FADE /* DropDown.swift in Sources */,
 				6C2E41EA2926B2E0008ABCF5 /* Cores.swift in Sources */,
+				2F1C9094293947D40031FADE /* TabSatisfaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
