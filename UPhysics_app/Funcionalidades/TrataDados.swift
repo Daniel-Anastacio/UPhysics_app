@@ -33,6 +33,50 @@ func carregaDados<T: Codable>(nomeArquivo: String, tipoDado: T.Type) -> T? {
 }
 
 
-func salvaDados<T: Codable>(nomeArquivo: String, tipoDado: T.Type) -> Void {
-    print("Salvando os dados...")
+func salvaDados<T: Encodable>(nome_arquivo: String, objeto: T) -> Void {
+    
+    let jsonEncoder = JSONEncoder()
+    
+    do {
+        
+        // Transforma objeto json para bytes
+        let jsonData = try jsonEncoder.encode(objeto)
+        
+        
+        // Transforma bytes para string
+        guard let jsonString = String(data: jsonData, encoding: String.Encoding.utf8)
+        else {
+            print("Falha na codificação para string de \(nome_arquivo).json")
+            return
+        }
+        
+        
+        // Transformando string json para bytes e procurando diretório
+        guard let jsonData = jsonString.data(using: .utf8), let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+        else {
+            print("Falha ao converter string json para bytes ou ao encontrar diretório")
+            return
+        }
+        
+        
+        let pathWithFileName = documentDirectory.appendingPathComponent(nome_arquivo)
+        
+        do {
+            try jsonData.write(to: pathWithFileName)
+            print("\(nome_arquivo) foi salvo com sucesso")
+        } catch {
+            print("Falha ao escrever e salvar \(nome_arquivo).json")
+            return
+        }
+        
+        
+        
+    }
+    
+    
+    catch {
+        print("Falha na codificação para bytes de \(nome_arquivo)")
+        return
+    }
+    
 }
