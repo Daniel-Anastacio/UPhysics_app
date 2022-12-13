@@ -58,7 +58,6 @@ struct Timer: View {
                                 .onChange(of: isOnam) { newValue in
                                     if newValue == true {
                                         Alarme["Período"] = 1
-                                        print(Alarme)
                                     }
                                 }
                             Spacer(minLength: 0).frame(maxHeight: 0)
@@ -66,7 +65,6 @@ struct Timer: View {
                                 .onChange(of: isOnpm) { newValue in
                                     if newValue == true {
                                         Alarme["Período"] = 2
-                                        print(Alarme)
                                     }
                                 }
                         }

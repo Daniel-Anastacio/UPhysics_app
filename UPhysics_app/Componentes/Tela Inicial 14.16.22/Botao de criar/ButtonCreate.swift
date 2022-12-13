@@ -13,6 +13,8 @@ struct ButtonCreate: View {
     @State var isSelected: Bool = false
     @Binding var Alarme: [String:Int]
     
+    @State var isShowingCreateDiary: Bool = false
+    
     var body: some View {
         
         ZStack{
@@ -31,7 +33,7 @@ struct ButtonCreate: View {
                             print("deu ruim")
                         }
                 
-                        
+                        isShowingCreateDiary = true
                 
                     },
                     label: {
@@ -47,6 +49,9 @@ struct ButtonCreate: View {
                         }
                     }
             )
+        }
+        .navigationDestination(isPresented: $isShowingCreateDiary) {
+            CreateDiary()
         }
     }
 }
