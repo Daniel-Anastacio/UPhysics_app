@@ -1,9 +1,12 @@
+// dia em Int (1: domingo, 2: segunda, ...)
+// PM ou AM em Int (1: AM, 2: PM)
+
 struct DadosApp: Codable {
     
-    var dia: String
+    var dia: Int
     var hora: Int
     var minuto: Int
-    var PMouAM: String
+    var PMouAM: Int
     
 }
 

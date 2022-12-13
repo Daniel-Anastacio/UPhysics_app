@@ -18,7 +18,21 @@ struct ButtonCreate: View {
         ZStack{
             
             Button( action: {
+                
                         isSelected = isSelected == true ? false : true
+                
+                        let dados_app = DadosApp(dia: Alarme["Dia da semana"]!, hora: Alarme["Hora"]!, minuto: Alarme["Minuto"]!, PMouAM: Alarme["Período"]!)
+                
+                        salvaDados(nome_arquivo: "DadosApp", objeto: dados_app)
+                        
+                        if let dados = carregaDados(nomeArquivo: "DadosApp", tipoDado: DadosApp.self) {
+                            print(dados)
+                        } else {
+                            print("deu ruim")
+                        }
+                
+                        
+                
                     },
                     label: {
                         ZStack{

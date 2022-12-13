@@ -12,13 +12,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
     
-        Text("Teste")
-        
-        .onAppear{
-            if let result = carregaDados(nomeArquivo: "dados_app", tipoDado: DadosApp.self) {
-                print(result)
-            }
-        }
+        TelaInicial()
         
     }
 }
