@@ -16,6 +16,8 @@ struct ButtonCreateSatisfaction: View {
             Button(
                 action: {
                     button = button == true ? false : true
+                    
+                    print("Diário criado")
                 },
                 label: {
                     ZStack{

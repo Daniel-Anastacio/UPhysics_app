@@ -27,13 +27,18 @@ struct FraseDiarias: Codable {
     
 }
 
-struct DiariosSemanais: Codable {
-    
-    var dia: String
+
+struct Diarios: Codable {
+    var data: String
     var preenchido: Bool
     var intensidade: Int
     var motivacao: Int
     var tipo_exercicio: String
     var humor: Int
+}
+
+struct DiariosSemanais: Codable {
+    
+    let diarios: [Diarios]
     
 }
