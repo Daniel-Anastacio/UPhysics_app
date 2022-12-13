@@ -55,18 +55,23 @@ struct Timer: View {
                         VStack{
     //                        Text(Alarme["Período"]!.formatted())
                             Btns(texto: "AM", isOn: $isOnam, isOff:$isOnpm , radius:.topRight)
+                                .onChange(of: isOnam) { newValue in
+                                    if newValue == true {
+                                        Alarme["Período"] = 1
+                                        print(Alarme)
+                                    }
+                                }
                             Spacer(minLength: 0).frame(maxHeight: 0)
                             Btns(texto: "PM", isOn: $isOnpm, isOff:$isOnam , radius:.bottomRight)
+                                .onChange(of: isOnpm) { newValue in
+                                    if newValue == true {
+                                        Alarme["Período"] = 2
+                                        print(Alarme)
+                                    }
+                                }
                         }
                     }
-                    .onChange(of: isOnam) { newValue in
-                        if newValue == true {
-                            Alarme["Período"] = 1
-                            print(Alarme)
-                        } else {
-                            Alarme["Período"] = 2
-                        }
-                    }
+                    
                 }
             }
         }
