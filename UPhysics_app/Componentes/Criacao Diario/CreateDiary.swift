@@ -72,7 +72,10 @@ struct CreateDiary: View {
                ButtonCreateSatisfaction()
                Spacer().frame(maxHeight: 41)
                Rectangle()
-                   .frame(height: 50)
+                   .frame(width: 345, height: 50)
+                   .cornerRadius(25)
+                   .foregroundColor(.white)
+                   .shadow(color: Color.black.opacity(0.05), radius:5)
                //Spacer().frame(maxHeight: 0)
             }
         }
