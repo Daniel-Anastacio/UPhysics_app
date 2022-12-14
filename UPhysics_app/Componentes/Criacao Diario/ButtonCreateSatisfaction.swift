@@ -34,8 +34,10 @@ struct ButtonCreateSatisfaction: View {
     }
 }
 
+/*
 struct ButtonCreateSatisfaction_Previews: PreviewProvider {
     static var previews: some View {
         ButtonCreateSatisfaction()
     }
 }
+*/

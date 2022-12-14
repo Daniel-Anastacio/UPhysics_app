@@ -17,7 +17,6 @@ struct TelaInicial: View {
                 Cores.laranja.ignoresSafeArea()
                 VStack {
                     Spacer().frame(maxHeight: 124)
-                    Text("\(Alarme["Hora"]!)")
                     Text("Quando você pode praticar\n exercícios físicos?").multilineTextAlignment(.center).font(Font.system(size: 18)).bold()
                     Spacer().frame(maxHeight: 54)
                     Timer(Alarme: $Alarme)

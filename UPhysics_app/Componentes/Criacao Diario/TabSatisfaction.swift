@@ -14,6 +14,8 @@ struct TabSatisfaction: View {
     @State private var buttonC = false
     @State private var buttonD = false
     @State private var buttonE = false
+    @Binding public var diario: [String:Int]
+    
     
     var body: some View {
         
@@ -38,6 +40,8 @@ struct TabSatisfaction: View {
                                 buttonD = false
                                 buttonE = false
                             }
+                            
+                            diario["Satisfação"] = 1
                         }
                     
                     ButtonTabSatisfaction(buttonsZ: $buttonB, texto: "🙁")
@@ -50,6 +54,8 @@ struct TabSatisfaction: View {
                                 buttonD = false
                                 buttonE = false
                             }
+                            
+                            diario["Satisfação"] = 2
                         }
                     
                     ButtonTabSatisfaction(buttonsZ: $buttonC, texto: "😐")
@@ -62,6 +68,8 @@ struct TabSatisfaction: View {
                                 buttonD = false
                                 buttonE = false
                             }
+                            
+                            diario["Satisfação"] = 3
                         }
                     
                     ButtonTabSatisfaction(buttonsZ: $buttonD, texto: "🙂")
@@ -74,6 +82,8 @@ struct TabSatisfaction: View {
                                 buttonA = false
                                 buttonE = false
                             }
+                            
+                            diario["Satisfação"] = 4
                         }
                     
                     ButtonTabSatisfaction(buttonsZ: $buttonE, texto: "😃")
@@ -86,6 +96,8 @@ struct TabSatisfaction: View {
                                 buttonD = false
                                 buttonA = false
                             }
+                            
+                            diario["Satisfação"] = 5
                         }
                 }
             }
@@ -94,9 +106,12 @@ struct TabSatisfaction: View {
         .frame(height: 60)
     }
 }
+/*
+
 struct TabSatisfaction_Previews: PreviewProvider {
     static var previews: some View {
         TabSatisfaction()
     }
 }
 
+*/

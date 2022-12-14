@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CreateDiary: View {
     @State var Exercicio = "Escolha o Exercício"
+    @State public var diario : [String:Int] = ["Intensidade": 0, " Motivação ": 0, "Tipo de Exercicio":0, "Satisfação": 0]
+
     var body: some View {
         
        ZStack{
@@ -20,10 +22,10 @@ struct CreateDiary: View {
                     .foregroundColor(Cores.marrom).bold()
 //                Spacer()
 //                    .frame(height: 44)
-                DropDown(tipo: "Intensidade", Pesquisa: "Escolha a Intensidade", cinco: "🔥🔥🔥🔥🔥", quatro: "🔥🔥🔥🔥", tres: "🔥🔥🔥", dois: "🔥🔥", um: "🔥")
+               DropDown(tipo: "Intensidade", Pesquisa: "Escolha a Intensidade", cinco: "🔥🔥🔥🔥🔥", quatro: "🔥🔥🔥🔥", tres: "🔥🔥🔥", dois: "🔥🔥", um: "🔥", diario: $diario)
 //                Spacer()
 //                    .frame(height: 44)
-                DropDown(tipo: " Motivação ", Pesquisa: "Escolha a Motivação", cinco: "⭐️⭐️⭐️⭐️⭐️", quatro: "⭐️⭐️⭐️⭐️", tres: "⭐️⭐️⭐️", dois: "⭐️⭐️", um: "⭐️")
+                DropDown(tipo: " Motivação ", Pesquisa: "Escolha a Motivação", cinco: "⭐️⭐️⭐️⭐️⭐️", quatro: "⭐️⭐️⭐️⭐️", tres: "⭐️⭐️⭐️", dois: "⭐️⭐️", um: "⭐️", diario: $diario)
 //                Spacer()
 //                    .frame(height: 44)
                 HStack{
@@ -46,11 +48,13 @@ struct CreateDiary: View {
                             Menu{
                                 Button(action: {
                                     Exercicio = "🏋️ Anaeróbico"
+                                    diario["Tipo de Exercicio"] = 1
                                 }, label: {
                                     Text("🏋️ Anaeróbico").font(Font.system(size: 12)).foregroundColor(.black)
                                 })
                                 Button(action: {
                                     Exercicio = "🏃 Aeróbico"
+                                    diario["Tipo de Exercicio"] = 2
                                 }, label: {
                                     Text("🏃 Aeróbico").font(Font.system(size: 12)).foregroundColor(.black)
                                 })
@@ -67,16 +71,20 @@ struct CreateDiary: View {
                 }
 //                Spacer()
 //                    .frame(height: 44)
-               TabSatisfaction()
-               Spacer().frame(maxHeight: 20)
-               ButtonCreateSatisfaction()
-               Spacer().frame(maxHeight: 41)
+               Group{
+                   TabSatisfaction(diario: $diario)
+                   Spacer().frame(maxHeight: 20)
+               }
+               Group{
+                   ButtonCreateSatisfaction()
+                   Spacer().frame(maxHeight: 41)
+               }
                Rectangle()
                    .frame(width: 345, height: 50)
                    .cornerRadius(25)
                    .foregroundColor(.white)
                    .shadow(color: Color.black.opacity(0.05), radius:5)
-               //Spacer().frame(maxHeight: 0)
+               Spacer().frame(maxHeight: 41)
             }
         }
     }
