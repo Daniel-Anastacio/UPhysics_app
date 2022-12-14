@@ -17,6 +17,7 @@ struct DropDown: View {
     @State var tres: String = ""
     @State var dois: String = ""
     @State var um: String = ""
+    @Binding public var diario: [String:Int]
     
     var body: some View {
         HStack{
@@ -33,26 +34,31 @@ struct DropDown: View {
                     Menu{
                         Button(action: {
                             Pesquisa = cinco
+                            diario[tipo] = 5
                         }, label: {
                             Text(cinco)
                         })
                         Button(action: {
                             Pesquisa = quatro
+                            diario[tipo] = 4
                         }, label: {
                             Text(quatro)
                         })
                         Button(action: {
                             Pesquisa = tres
+                            diario[tipo] = 3
                         }, label: {
                             Text(tres)
                         })
                         Button(action: {
                             Pesquisa = dois
+                            diario[tipo] = 2
                         }, label: {
                             Text(dois)
                         })
                         Button(action: {
                             Pesquisa = um
+                            diario[tipo] = 1
                         }, label: {
                             Text(um)
                         })
@@ -69,9 +75,10 @@ struct DropDown: View {
         }
     }
 }
-
+/*
 struct DropDown_Previews: PreviewProvider {
     static var previews: some View {
-        DropDown(Pesquisa: "", cinco: "", quatro: "", tres: "", dois: "", um: "")
+        DropDown(Pesquisa: "", cinco: "", quatro: "", tres: "", dois: "", um: "", diario: [String:Int])
     }
 }
+*/
