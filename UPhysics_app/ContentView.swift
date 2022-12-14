@@ -14,7 +14,7 @@ struct ContentView: View {
     
         TelaInicial().onAppear{
             
-            let diario = Diarios(data: "13/12/2022", preenchido: true, intensidade: 3, motivacao: 2, tipo_exercicio: "Anaeróbico", humor: 4)
+            let diario = Diarios(data: dateParaString(), preenchido: true, intensidade: 3, motivacao: 2, tipo_exercicio: 1, satisfacao: 4)
                 
             let diarios = DiariosSemanais(diarios: [diario])
             

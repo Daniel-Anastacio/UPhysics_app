@@ -96,3 +96,21 @@ func salvaDados<T: Encodable>(nome_arquivo: String, objeto: T) -> Void {
 
     
 }
+
+
+
+func dateParaString () -> String {
+    
+    // Criando o objeto date
+    let date = Date()
+
+    // Criando o formatador de data
+    let dateFormatter = DateFormatter()
+
+    // Definindo o formato de data
+    dateFormatter.dateFormat = "dd/MM/YY"
+
+    // Convertendo Date para String
+    return dateFormatter.string(from: date)
+    
+}

@@ -28,17 +28,18 @@ struct FraseDiarias: Codable {
 }
 
 
+// Tipo de exercício em Int (1: Anaeróbico, 2: Aeróbico)
 struct Diarios: Codable {
     var data: String
     var preenchido: Bool
     var intensidade: Int
     var motivacao: Int
-    var tipo_exercicio: String
-    var humor: Int
+    var tipo_exercicio: Int
+    var satisfacao: Int
 }
 
 struct DiariosSemanais: Codable {
     
-    let diarios: [Diarios]
+    var diarios: [Diarios]
     
 }

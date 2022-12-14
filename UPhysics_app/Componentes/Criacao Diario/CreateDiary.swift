@@ -76,7 +76,7 @@ struct CreateDiary: View {
                    Spacer().frame(maxHeight: 20)
                }
                Group{
-                   ButtonCreateSatisfaction()
+                   ButtonCreateSatisfaction(diario: $diario)
                    Spacer().frame(maxHeight: 41)
                }
                Rectangle()
